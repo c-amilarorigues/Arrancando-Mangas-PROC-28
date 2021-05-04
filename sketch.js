@@ -38,11 +38,11 @@ function setup() {
 	groundObject=new ground(width/2,600,width,20);
 	launcherObject=new launcher(stoneObj.body,{x:235,y:420})
   // var render = Render.create({
-  //   element: document.body,
-  //   engine: engine,
-  //   options: {
-  //     width: 1300,
-  //     height: 600,
+  //   elemento: document.body,
+  //   mecanismo: engine,
+  //   opções: {
+  //     largura: 1300,
+  //     altura: 600,
   //     wireframes: false
   //   }
   // });
@@ -101,7 +101,7 @@ function mouseDragged()
 function mouseReleased()
 {
 	launcherObject.fly();
-    // distance=int(dist(stoneObj.x,stoneObj.y,mango1.x,mango1.y));
+    // distância=int(dist(stoneObj.x,stoneObj.y,mango1.x,mango1.y));
 }
 
 function keyPressed() {
@@ -112,7 +112,7 @@ function keyPressed() {
   }
 
   function detectollision(lstone,lmango){
-	/*var collision = Matter.SAT.collides(lstone,lmango);
+	/*var colisão = Matter.SAT.collides(lstone,lmango);
 	if(collision.collided){
 		console.log("collided");
 		Matter.Body.setStatic(lmango,false);	
@@ -121,11 +121,11 @@ function keyPressed() {
   stoneBodyPosition=lstone.body.position
   
   var distance=dist(stoneBodyPosition.x, stoneBodyPosition.y, mangoBodyPosition.x, mangoBodyPosition.y)
-  //console.log(distance)
+  //console.log(distância)
  // console.log(lmango.r+lstone.r)
   	if(distance<=lmango.r+lstone.r)
     {
-      //console.log(distance);
+      //console.log(distância);
   	  Matter.Body.setStatic(lmango.body,false);
     }
 
